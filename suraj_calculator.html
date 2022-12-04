@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator use mathematically expression</title>
+   
+   <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULATOR PROGRAMMING IN JavaScript <br><small><a href="#"> ---created by suraj achievers </a></small></h1><br>
+        
+        <div class="formstyle">
+            <form action="#" name="form1">
+                <input  class="textview" name="textview">
+            </form>
+            <center>
+                <table class="table">
+                    <tr>
+                        <td><input type="button" class="btn" value="c" onclick="form1.textview.value=' ' "></td>
+                        <td><input type="button" class="btn" value="b" onclick="backspace('b')"></td>
+                        <td><input type="button" class="btn" value="/" onclick="insert('/')"></td>
+                        <td><input type="button" class="btn" value="x" onclick="insert('*')"></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="7" onclick="insert(7)" ></td>
+                        <td><input type="button" class="btn" value="8" onclick="insert(8)" ></td>
+                        <td><input type="button" class="btn" value="9" onclick="insert(9)" ></td>
+                        <td><input type="button" class="btn" value="-" onclick="insert('-')" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="4" onclick="insert(4)" ></td>
+                        <td><input type="button" class="btn" value="5" onclick="insert(5)" ></td>
+                        <td><input type="button" class="btn" value="6" onclick="insert(6)" ></td>
+                        <td><input type="button" class="btn" value="+" onclick="insert('+')" ></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" value="1" onclick="insert(1)" ></td>
+                        <td><input type="button" class="btn" value="2" onclick="insert(2)" ></td>
+                        <td><input type="button" class="btn" value="3" onclick="insert(3)" ></td>
+                        <td rowspan="5"><input type="button" style="height: 110px;" class="btn" value="=" onclick="equel()" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" class="btn" style="width: 108px ;" value="0" onclick="insert(0)"</td>
+                        <td><input type="button" class="btn" value="." onclick="insert('.')"></td>
+                    </tr>
+                </table>
+            </center>
+
+
+            <script>
+                // Use insert() function to insert the number in textview.
+                function insert(num)
+                {
+
+                    documentdocument.form1.textview.value=document.form1.textview.value+num;
+                }
+                 // Use equal() function to return the result based on passed values. 
+                 function equel()
+                 {
+                     var exp =document.form1.textview.value;
+                     if(exp)
+                     {
+                        // If you construct an arithmetic expression as a string, you can use eval() to evaluate it at a later time. 
+                         document.form1.textview.value=eval(exp);//santax:eval(string)
+
+                     }
+                 }
+                  /* Here, we create a backspace() function to remove the number at the end of the numeric series in textview. */  
+                 function backspace()  
+                 {  
+                     var exp = document.form1.textview.value;  
+                     document.form1.textview.value = exp.substring(0, exp.length - 1); /* remove the element from total length ? 1 */  
+                }  
+
+             
+            </script>
+
+
+
+
+</body>
+</html>

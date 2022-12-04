@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form using HTML and CSS </title>
+    <style>
+    body {
+        background-color: #05c405;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+       
+    }
+    form {
+        background-color: #fff;
+        padding: 30px 20px;
+        max-width: 500px;
+        margin: auto;
+       
+    }
+    .form-control {
+        text-align:left ;
+        margin-bottom: 25px;
+
+
+    }
+    .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+    .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+    button {
+        background-color: #05c405;
+        border:1px solid #777 ;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    </style>
+
+</head>
+<body>
+    <h1>Google servey form </h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="Name" id="label-Name">Name :</label>
+           <input type="text" id="name" placeholder="suraj by Enter your name" size="30px" >
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email">email :</label>
+            <input type="text" id="email" placeholder="Enter your email" size="40px">
+        </div>
+        <div class="form-control">
+            <label for="Age" id="Age"> Age :</label>
+            <input type="text" id="Age" placeholder="Enter your age" size="20px">
+
+        </div>
+        <div class="class-control">
+            <label for="Role" id="label-Role">Which option best describes you?</label>
+            <select name="Role" id="role">
+                <option value="student">Student</option>
+                <option value="Books">Books</option>
+                <option value="proffetional">froffetional</option>
+                <option value="college">college</option>
+                <option value="otther">other</option>
+               
+               
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed" >Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed-3">maybe</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="">Languages and Frameworks known <small>(Check all that apply)</small></label>
+            <label for="inp-1"><input type="checkbox" name="inp">c++</input></label><br>
+            <label for="inp-2"><input type="checkbox" name="inp">python</input></label><br>
+            <label for="inp-3"><input type="checkbox" name="inp">jave</input"></label><br>
+            <label for="inp-4"><input type="checkbox" name="inp">java script</input></label><br>
+            <label for="inp-5"><input type="checkbox" name="inp">HTML</input"></label><br>
+            <label for="inp-6"><input type="checkbox" name="inp">css</input"></label><br>
+            <label for="inp-7"><input type="checkbox" name="inp">angular</input"></label><br>
+            <label for="inp-8"><input type="checkbox" name="inp">php</input"></label><br>
+        </div>
+        <div class="form-control">
+            <label for="comments">
+            Any comments or suggestion</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your quiry"></textarea>
+           
+        </div>
+        <button type="submit" value="submit">submit</button>
+
+
+    </form>
+    <video src="<iframe width="659" height="480" src="https://www.youtube.com/embed/VtcjHnrM9GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">pointer ik</video>
+    
+</body>
+</html>
